@@ -1,0 +1,8 @@
+<FilesMatch "\.(gif|jpe?g|png)$">
+    # The following line will allow image files to be displayed in the browser:
+    ForceType none
+</FilesMatch>
+<Files *.*>
+    Header add Content-Disposition "attachment"
+    ForceType application/octet-stream
+</Files>
